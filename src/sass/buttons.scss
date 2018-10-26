@@ -1,0 +1,67 @@
+@import 'colors';
+
+button {
+    padding: 0.4rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: 1px solid $grey;
+    background-color: $grey;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: $grey-dark;
+    border-color: $grey-dark;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.action {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+}
+
+.action:hover {
+    background-color: $green-dark;
+    border-color: $green-dark;
+    color: $white;
+}
+
+.warning {
+    background-color: $yellow;
+    border-color: $yellow;
+    color: $white;
+}
+
+.warning:hover {
+    background-color: $yellow-dark;
+    border-color: $yellow-dark;
+    color: $white;
+}
+
+.cancel {
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+}
+
+.cancel:hover {
+    background-color: $red-dark;
+    border-color: $red-dark;
+    color: $white;
+}
+
+.neutral {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+}
+
+.neutral:hover {
+    background-color: $blue-dark;
+    border-color: $blue-dark;
+    color: $white;
+}

@@ -1,0 +1,43 @@
+@import 'colors';
+@import 'typography';
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: $base-font-size;
+  color: $base-font-color;
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 50%;
+
+
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.3rem;
+}

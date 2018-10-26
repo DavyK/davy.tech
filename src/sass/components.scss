@@ -1,0 +1,58 @@
+@import 'colors';
+
+.life-grid {
+    float: left;
+    width: 75%;
+}
+
+.life-grid-row {
+    clear: left;
+}
+
+.life-grid-cell {
+    float: left;
+    height: 20px;
+    width: 20px;
+    border: 1px solid $grey-light;
+    background-color: $white;
+    border-radius: 50%;
+    // margin: 1px;
+}
+
+.alive {
+    background-color: $alive;
+}
+
+.game-controls {
+    width: 20%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    float: left;
+}
+
+.game-controls > input {
+    line-height: 1.5rem;
+    border: 1px solid $grey-light;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    box-shadow: inset 1px 1px 3px 1px $grey-vlight;
+}
+
+.game-controls > label {
+    font-size: 0.8rem;
+}
+
+.text-data {
+
+    margin-bottom: 0.6rem;
+}
+
+img.avatar-lg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid $black;
+    border-radius: 50%;
+}
