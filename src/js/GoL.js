@@ -217,6 +217,13 @@ class GoL extends Component {
     return (
       <div>
           <h3>Conway's Game of Life</h3>
+          <div className="text-data">Generation: {this.state.generation}</div>
+          <Grid
+              alive={this.state.alive}
+              changeHandler={this.toggleAlive}
+              interval={this.state.interval}
+              size={this.state.size}
+          />
           <Controls
               initialCount={this.state.initialCount}
               changeInitialCountHandler={this.changeInitialCountHandler}
@@ -231,13 +238,7 @@ class GoL extends Component {
               tickOnce={this.tick}
               started={this.state.started}
           />
-          <div className="text-data">Generation: {this.state.generation}</div>
-          <Grid
-              alive={this.state.alive}
-              changeHandler={this.toggleAlive}
-              interval={this.state.interval}
-              size={this.state.size}
-          />
+
       </div>
     );
   }
