@@ -1,8 +1,14 @@
 @import 'colors';
 
 .life-grid {
-    float: left;
-    width: 75%;
+    @media screen and (max-device-width : 480px) {
+        width: 100%;
+    }
+    @media screen and (min-device-width : 481px) {
+        float: right;
+        width: 75%;
+    }
+    margin-bottom: 2rem;
 }
 
 .life-grid-row {
@@ -11,8 +17,8 @@
 
 .life-grid-cell {
     float: left;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border: 1px solid $grey-light;
     background-color: $white;
     border-radius: 50%;
@@ -26,8 +32,14 @@
 .game-controls {
     width: 20%;
     margin-right: 1rem;
-    margin-left: 1rem;
-    float: left;
+    @media screen and (max-device-width : 480px) {
+      width: 95%;
+    }
+    @media screen and (min-device-width : 481px) {
+        float: left;
+    }
+
+
 }
 
 .game-controls > input {

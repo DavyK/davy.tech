@@ -12,10 +12,11 @@ body {
   font-size: $base-font-size;
   color: $base-font-color;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   width: 50%;
-
-
+  @media screen and (max-device-width : 480px) {
+    width: 95%;
+  }
 }
 
 
