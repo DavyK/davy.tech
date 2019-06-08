@@ -18,6 +18,9 @@ article.main-content {
   @media screen and (max-device-width: 480px) {
     article.main-content {
       width: 95%; } }
+  @media screen and (min-device-width: 481px) and (max-device-width: 720px) {
+    article.main-content {
+      width: 75%; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
@@ -53,7 +56,6 @@ header > nav {
 
 .site-logo {
   font-weight: 900;
-  margin-left: 30px;
   font-size: 1.1rem; }
 
 .nav-icon-list {
@@ -64,7 +66,7 @@ header > nav {
 
 .nav-icon-list > li {
   display: inline-block;
-  margin: 2px; }
+  margin: 2px 3px; }
 
 img.nav-icon {
   height: 24px;
