@@ -8,11 +8,15 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: monaco, monospace;
   font-size: $base-font-size;
   color: $base-font-color;
+  background-color: $bg-color;
+}
+
+article.main-content {
+  padding-top: 1rem;
   margin: 0 auto;
-  margin-top: 1.5rem;
   width: 50%;
   @media screen and (max-device-width : 480px) {
     width: 95%;
@@ -41,4 +45,13 @@ h5 {
 }
 h6 {
   font-size: 1.3rem;
+}
+
+a, .link {
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
 }
