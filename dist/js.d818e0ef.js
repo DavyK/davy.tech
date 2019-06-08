@@ -26867,18 +26867,20 @@ var NotFound = function NotFound() {
 
 var AppRouter = function AppRouter() {
   return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("header", null, _react.default.createElement("nav", null, _react.default.createElement("span", {
-    className: "logo"
+    className: "site-logo"
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/"
   }, "Davy Kavanagh")), _react.default.createElement("ul", {
-    className: "logo-list"
+    className: "nav-icon-list"
   }, _react.default.createElement("li", null, _react.default.createElement("a", {
     href: "https://github.com/DavyK"
   }, _react.default.createElement("img", {
+    className: "nav-icon",
     src: _github.default
   }))), _react.default.createElement("li", null, _react.default.createElement("a", {
     href: "https://www.linkedin.com/in/david-kavanagh-95706342/"
   }, _react.default.createElement("img", {
+    className: "nav-icon",
     src: _linkedin.default
   })))))), _react.default.createElement("article", {
     className: "main-content"
@@ -26932,7 +26934,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63185" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64868" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,22 +1,22 @@
-header > nav > .logo {
+.site-logo {
   font-weight: 900;
   margin-left: 30px;
   font-size: 1.1rem;
 }
 
-header > nav > ul {
+.nav-icon-list {
   list-style: none;
   padding: 0px;
   float: right;
   margin-right: 20px;
 }
 
-header > nav > ul > li {
+.nav-icon-list > li {
   display: inline-block;
   margin: 8px;
 }
 
-header > nav > ul > li > a > img {
+img.nav-icon {
   height: 32px;
   width: 32px;
   opacity: 0.7;
@@ -24,19 +24,4 @@ header > nav > ul > li > a > img {
   &:hover {
     opacity: 1;
   }
-}
-
-header .menu {
-  float: right;
-  margin: 1rem;
-}
-
-aside > nav {
-  background-color: $side-bar-color;
-  position: fixed;
-  left: 0;
-  top: 2rem;
-  width: 5%;
-  height: 100%;
-  margin-right: 3rem;
 }

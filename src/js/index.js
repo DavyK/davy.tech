@@ -51,12 +51,12 @@ const AppRouter = () => (
   <Router>
     <header>
       <nav>
-        <span className="logo">
+        <span className="site-logo">
           <Link to="/">Davy Kavanagh</Link>
         </span>
-        <ul className="logo-list">
-          <li><a href="https://github.com/DavyK"><img src={github} /></a></li>
-          <li><a href="https://www.linkedin.com/in/david-kavanagh-95706342/"><img src={linkedin} /></a></li>
+        <ul className="nav-icon-list">
+          <li><a href="https://github.com/DavyK"><img className="nav-icon" src={github} /></a></li>
+          <li><a href="https://www.linkedin.com/in/david-kavanagh-95706342/"><img className="nav-icon" src={linkedin} /></a></li>
         </ul>
       </nav>
     </header>
