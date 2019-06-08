@@ -1,3 +1,6 @@
+header > nav {
+  padding: 8px;
+}
 .site-logo {
   font-weight: 900;
   margin-left: 30px;
@@ -8,17 +11,17 @@
   list-style: none;
   padding: 0px;
   float: right;
-  margin-right: 20px;
+  margin-right: 8px;
 }
 
 .nav-icon-list > li {
   display: inline-block;
-  margin: 8px;
+  margin: 2px;
 }
 
 img.nav-icon {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
   opacity: 0.7;
 
   &:hover {
