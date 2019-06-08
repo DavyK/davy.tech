@@ -1,6 +1,7 @@
-$base-font-color: #000;
+$bg-color: #2F2F2F;
+$base-font-color: #fff;
 
-$top-bar-color: #00f;
+$top-bar-color: #2F2F2F;
 $side-bar-color: #ddd;
 
 $white: #fff;
@@ -11,10 +12,10 @@ $grey-vlight: #ededed;
 $grey-light: #ddd;
 $grey-dark: #888;
 
-$blue: #2789fc;
-$blue-light: ligthen($blue, 10%);
-$blue-dark: darken($blue, 10%);
 
+$blue: #5C8FEF;
+$blue-less: rgba(92, 143, 239, 0.8);
+$blue-dark: darken($blue, 10%);
 
 $green: #0dc81a;
 $green-light: lighten($green, 10%);
@@ -30,4 +31,4 @@ $red-light: lighten($red, 10%);
 $red-dark: darken($red, 10%);
 
 
-$alive: #0f0;
+$alive: rgb(57, 207, 57);

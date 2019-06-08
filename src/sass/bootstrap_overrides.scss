@@ -1,0 +1,12 @@
+
+.btn-outline-primary {
+    border-color: $blue;
+    color: $blue;
+
+    &:hover {
+        border-color: $blue;
+        color: $white;
+        background-color: $blue;
+    }
+}
+
