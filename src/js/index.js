@@ -23,7 +23,7 @@ const Intro = () => (
       </ul>
     </section>
     <section className="footer">
-      "It is possible to commit no mistakes and still loose. That is not a weakness. That is life." - <span className="quote-author">Capt. Jean Luc Picard.</span>
+      "It is possible to commit no mistakes and still lose. That is not a weakness. That is life." - <span className="quote-author">Capt. Jean Luc Picard.</span>
     </section>
   </div>
 );

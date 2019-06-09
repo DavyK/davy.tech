@@ -17,13 +17,9 @@ body {
 article.main-content {
   padding-top: 1rem;
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
   @media screen and (max-device-width : 480px) {
     width: 95%;
-  }
-
-  @media screen and (min-device-width : 481px) and (max-device-width : 720px) {
-    width: 75%;
   }
 }
 

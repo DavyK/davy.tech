@@ -10,8 +10,8 @@ const About = () => (
       <li><span className="emoji-bullet">🎓</span>lives in Oxford</li>
       <li><span className="emoji-bullet">💻</span>works at Intercom in London</li>
       <li><span className="emoji-bullet">👨‍🔬</span>used to be a scientist (Genetics)</li>
-      <li><span className="emoji-bullet">📈</span>loves making thing that people find useful</li>
-      <li><span className="emoji-bullet">⏯️</span>likes games of all kinds (except sports)</li>
+      <li><span className="emoji-bullet">📈</span>loves making things that people find useful</li>
+      <li><span className="emoji-bullet">🎮</span>likes games of all kinds (except sports)</li>
       <li><span className="emoji-bullet">🎲</span>passionate about table-top roleplaying games as a hobby</li>
       <li><span className="emoji-bullet">🐉</span>can't resist a good fantasy novel</li>
       <li><span className="emoji-bullet">✍️</span>likes to write</li>

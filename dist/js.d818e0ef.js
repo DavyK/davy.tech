@@ -25958,9 +25958,9 @@ var About = function About() {
     className: "emoji-bullet"
   }, "\uD83D\uDC68\u200D\uD83D\uDD2C"), "used to be a scientist (Genetics)"), _react.default.createElement("li", null, _react.default.createElement("span", {
     className: "emoji-bullet"
-  }, "\uD83D\uDCC8"), "loves making thing that people find useful"), _react.default.createElement("li", null, _react.default.createElement("span", {
+  }, "\uD83D\uDCC8"), "loves making things that people find useful"), _react.default.createElement("li", null, _react.default.createElement("span", {
     className: "emoji-bullet"
-  }, "\u23EF\uFE0F"), "likes games of all kinds (except sports)"), _react.default.createElement("li", null, _react.default.createElement("span", {
+  }, "\uD83C\uDFAE"), "likes games of all kinds (except sports)"), _react.default.createElement("li", null, _react.default.createElement("span", {
     className: "emoji-bullet"
   }, "\uD83C\uDFB2"), "passionate about table-top roleplaying games as a hobby"), _react.default.createElement("li", null, _react.default.createElement("span", {
     className: "emoji-bullet"
@@ -25982,47 +25982,54 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   items: [{
-    fromDate: 'Sep, 2002',
-    toDate: 'May, 2006',
-    place: 'NUI Maynooth, Maynooth, Ireland',
-    title: 'BSc in Biology',
-    description: 'I went to university!'
-  }, {
-    fromDate: 'Sep, 2008',
-    toDate: 'Sep, 2009',
-    place: "Queen's University, Belfast, United Kingdom",
-    title: 'MSc in Molecular Medicine',
-    description: 'I got a masters'
-  }, {
-    fromDate: 'Sep, 2009',
-    toDate: 'Jun, 2012',
-    place: "Queen's University, Belfast, United Kingdom",
-    title: 'PhD in Human Genetics and Bioinformatics',
-    description: "I'm a doctor"
-  }, {
-    fromDate: 'Jun, 2012',
-    toDate: 'Aug, 2014',
-    place: "Cardiff University, Cardiff, United Kingdom",
-    title: 'Research Fellow in Psychiatric Genetics',
-    description: "I'm also a data analyst"
-  }, {
-    fromDate: 'Sep, 2014',
-    toDate: 'Mar, 2016',
-    place: "School of Medicine at Mount Sinai, New York, USA",
-    title: 'Research Fellow in Psychiatric Genetics',
-    description: "I'm also a data analyst"
-  }, {
-    fromDate: 'Apr, 2016',
-    toDate: 'Nov, 2018',
-    place: "Oxford Nanopore Technologies",
-    title: 'Fullstack developer',
-    description: "python, react, css, sass, docker, terraform, postgres, mongo"
-  }, {
+    id: 'intercom',
     fromDate: 'Nov, 2019',
     toDate: 'Present',
     place: "Intercom",
     title: 'Product Engineer',
-    description: "product, ruby, rails, emberjs, product, css, sass, terraform, product"
+    description: "Designing and building product features across the backend and frontend. Responsibilities included designing and implementing technical solutions to deliver impactful features, communicating with customers to identify problems to be solved, and managing the roll out of large features for thousands for customers. Technologies used: Ruby (rails), Javascript (Vanilla, Ember JS, React), databases (Mysql, Mongo, Aws Redshift, Elasticsearch, Redis). Other tools: Git, Github, Python (for data analysis), Docker, docker-compose, data-dog, honeycomb."
+  }, {
+    id: 'nanopore',
+    fromDate: 'Apr, 2016',
+    toDate: 'Nov, 2018',
+    place: "Oxford Nanopore Technologies",
+    title: 'Fullstack developer',
+    description: "Full stack development of several different data tracking and reporting micro services. Responsible for deploying and maintaining several different APIs and frontend applications to capture and report on diverse data sources. Micro services are maintained and deployed using a continuous integration strategy. Technologies used: Python (django, flask), Javascript (Node, React, Redux), Uwsgi, Nginx, databases (MySQL, Postgresql, MongoDB, Redis, Elasticsearch), Other tools: Celery, Docker, Docker-compose, Docker-swarm, Git, GitLab CI, Kibana, Grafana, Prometheus."
+  }, {
+    id: 'sinai',
+    fromDate: 'Sep, 2014',
+    toDate: 'Mar, 2016',
+    place: "School of Medicine at Mount Sinai, New York, USA",
+    title: 'Research Fellow in Psychiatric Genetics',
+    description: "Genetic and genomics research into adult psychiatric disorders. Designed, implemented, tested and deployed a suite of data processing, analysis and visualisation tools for various data types, in a high throughput distributed environment. Technologies used: R, python (django, numpy, scipy, pandas), javascript (jquery, jquery-ui), databases (postgres, MongoDB), Git."
+  }, {
+    id: 'cardiff',
+    fromDate: 'Jun, 2012',
+    toDate: 'Aug, 2014',
+    place: "Cardiff University, Cardiff, United Kingdom",
+    title: 'Research Fellow in Psychiatric Genetics',
+    description: "Genetic and genomics research into adult psychiatric disorders. Designed, implemented, tested and deployed a suite of data processing, analysis and visualisation tools for various data types, in a high throughput distributed environment. Technologies used: R, python (django, numpy, scipy, pandas), javascript (jquery, jquery-ui), databases (postgres, MongoDB), Git."
+  }, {
+    id: 'phd',
+    fromDate: 'Sep, 2009',
+    toDate: 'Jun, 2012',
+    place: "Queen's University, Belfast, United Kingdom",
+    title: 'PhD in Human Genetics and Bioinformatics',
+    description: "Genetic and genomics research into diabetic kidney disease. Designed, implemented, tested and deployed a suite of data processing, analysis and visualisation tools for various data types, in a high throughput distributed environment. Technologies used: R, python (django, numpy, scipy, pandas), javascript (jquery, jquery-ui), databases (postgres, MongoDB), Git."
+  }, {
+    id: 'msc',
+    fromDate: 'Sep, 2008',
+    toDate: 'Sep, 2009',
+    place: "Queen's University, Belfast, United Kingdom",
+    title: 'MSc in Molecular Medicine',
+    description: 'The Masters in Molecular Medicine focused on human disease genetics, genetic epidemiology, bioinformatics, and modern sequencing and genotyping techniques.'
+  }, {
+    id: 'bsc',
+    fromDate: 'Sep, 2002',
+    toDate: 'May, 2006',
+    place: 'NUI Maynooth, Maynooth, Ireland',
+    title: 'BSc in Biology',
+    description: 'I studied three years of computer science, but in the end I opted for biology as my focus.'
   }]
 };
 exports.default = _default;
@@ -26034,46 +26041,137 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 var _timelineData = _interopRequireDefault(require("./timeline-data"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TimelineItem = function TimelineItem(props) {
-  return _react.default.createElement("li", {
-    className: "timeline-item"
-  }, _react.default.createElement("div", {
-    className: "timeline-item-date"
-  }, _react.default.createElement("span", {
-    className: "timeline-item-date-from"
-  }, props.fromDate), _react.default.createElement("span", {
-    className: "timeline-item-date-to"
-  }, props.toDate)), _react.default.createElement("div", {
-    classNane: "timeline-item-short"
-  }, _react.default.createElement("div", {
-    className: "timeline-item-short-place"
-  }, props.place), _react.default.createElement("div", {
-    className: "timeline-item-short-title"
-  }, props.title)), _react.default.createElement("div", {
-    classNane: "timeline-item-long"
-  }, _react.default.createElement("div", {
-    className: "timeline-item-long-title"
-  }, props.tile), _react.default.createElement("div", {
-    className: "timeline-item-long-description"
-  }, props.description)));
-};
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-var Timeline = function Timeline() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("span", {
-    className: "alert alert-warning"
-  }, "\uD83D\uDEA8page in progress...\uD83D\uDEA8"), _react.default.createElement("h2", null, "Previous Commits"), _react.default.createElement("ul", {
-    className: "timeline"
-  }, _timelineData.default.items.map(function (data) {
-    return _react.default.createElement(TimelineItem, data);
-  })));
-};
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var TimelineItem =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(TimelineItem, _Component);
+
+  function TimelineItem() {
+    _classCallCheck(this, TimelineItem);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(TimelineItem).apply(this, arguments));
+  }
+
+  _createClass(TimelineItem, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("li", {
+        className: "timeline-item",
+        onClick: this.props.handleClick
+      }, _react.default.createElement("div", {
+        className: "timeline-item-date"
+      }, _react.default.createElement("span", {
+        className: "timeline-item-date-from"
+      }, this.props.fromDate), _react.default.createElement("span", {
+        className: "timeline-item-date-to"
+      }, this.props.toDate)), _react.default.createElement("div", {
+        className: "timeline-item-flex-container"
+      }, _react.default.createElement("div", {
+        className: "timeline-item-short"
+      }, _react.default.createElement("div", {
+        className: "timeline-item-short-title ".concat(this.props.showLongText ? 'selected-item' : '')
+      }, this.props.title), _react.default.createElement("div", {
+        className: "timeline-item-short-place"
+      }, this.props.place)), _react.default.createElement("div", {
+        className: "timeline-item-long ".concat(this.props.showLongText ? '' : 'hidden')
+      }, _react.default.createElement("div", {
+        className: "timeline-item-long-title"
+      }, this.props.tile), _react.default.createElement("div", {
+        className: "timeline-item-long-description"
+      }, this.props.description))));
+    }
+  }]);
+
+  return TimelineItem;
+}(_react.Component);
+
+;
+
+var Timeline =
+/*#__PURE__*/
+function (_Component2) {
+  _inherits(Timeline, _Component2);
+
+  function Timeline(props) {
+    var _this;
+
+    _classCallCheck(this, Timeline);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Timeline).call(this, props));
+    _this.state = {
+      displayItem: null
+    };
+    return _this;
+  }
+
+  _createClass(Timeline, [{
+    key: "handleClick",
+    value: function handleClick(itemIndex) {
+      var _this2 = this;
+
+      this.setState(function () {
+        if (itemIndex !== _this2.state.displayItem) {
+          return {
+            displayItem: itemIndex
+          };
+        } else {
+          return {
+            displayItem: null
+          };
+        }
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h2", null, "Previous Commits"), _react.default.createElement("ul", {
+        className: "timeline"
+      }, _timelineData.default.items.map(function (data) {
+        return _react.default.createElement(TimelineItem, _extends({
+          key: "item-".concat(data.id),
+          handleClick: function handleClick() {
+            return _this3.handleClick(data.id);
+          },
+          showLongText: _this3.state.displayItem === data.id
+        }, data));
+      })));
+    }
+  }]);
+
+  return Timeline;
+}(_react.Component);
+
+;
 var _default = Timeline;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","./timeline-data":"src/js/timeline-data.js"}],"src/js/Projects.js":[function(require,module,exports) {
@@ -26848,7 +26946,7 @@ var Intro = function Intro() {
     to: "/projects"
   }, "See other projects")))), _react.default.createElement("section", {
     className: "footer"
-  }, "\"It is possible to commit no mistakes and still loose. That is not a weakness. That is life.\" - ", _react.default.createElement("span", {
+  }, "\"It is possible to commit no mistakes and still lose. That is not a weakness. That is life.\" - ", _react.default.createElement("span", {
     className: "quote-author"
   }, "Capt. Jean Luc Picard.")));
 };
@@ -26934,7 +27032,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58932" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49273" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
