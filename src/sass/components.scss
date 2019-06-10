@@ -133,3 +133,17 @@ img.avatar-lg {
     border: 1px solid $black;
     border-radius: 50%;
 }
+
+.project-list {
+    list-style: none;
+}
+
+.project-list > li {
+    margin-bottom: 0.5rem;
+}
+
+.project-list > li > a {
+    text-decoration: underline;
+    color: $blue;
+}
+

@@ -8,7 +8,7 @@ const Projects = () => (
     <ul className="project-list">
       <li>This site!</li>
       <li><Link to='/gol'>Conway's game of life</Link></li>
-      <li>Maze building and path finding with python and pygame</li>
+      <li><a href="https://github.com/DavyK/pygame-examples/">Maze building and path finding with python and pygame</a></li>
     </ul>
   </React.Fragment>
 );
