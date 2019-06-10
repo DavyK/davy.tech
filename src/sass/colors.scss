@@ -14,7 +14,7 @@ $grey-dark: #888;
 
 
 $blue: #5C8FEF;
-$blue-less: rgba(92, 143, 239, 0.8);
+$blue-less: lighten($blue, 10%);
 $blue-dark: darken($blue, 10%);
 
 $green: #0dc81a;
