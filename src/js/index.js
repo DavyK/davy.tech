@@ -6,6 +6,7 @@ import About from './About';
 import Timeline from './Timeline';
 import Projects from './Projects';
 import GameOfLife from './GameOfLife';
+import Pll from './Pll';
 import '../sass/index.scss';
 import github from '../../static/images/github.png';
 import linkedin from '../../static/images/linkedin.png';
@@ -67,6 +68,7 @@ const AppRouter = () => (
         <Route path="/timeline" component={Timeline} />
         <Route path="/projects" component={Projects} />
         <Route path="/gol" component={GameOfLife} />
+        <Route path="/pll" component={Pll} />
         <Route component={NotFound} />
       </Switch>
     </article>

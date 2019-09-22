@@ -151,3 +151,26 @@ img.avatar-lg {
     }
 }
 
+.cube-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cube-img-container {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.cube-img {
+    width: 200px;
+}
+
+.cube-algo-container {
+    margin: 1rem;
+    min-height: 3rem;
+}
+
