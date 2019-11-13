@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import itemData from './timeline-data';
+import CV from '../../static/files/cv.pdf'
 
 class TimelineItem extends Component {
 
@@ -52,7 +53,7 @@ class Timeline extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>Previous Commits</h2>
+        <h2>Previous Commits</h2> or <a href={CV}>view a boring pdf version</a>
         <ul className="timeline">
           {itemData.items.map(data => (
             <TimelineItem

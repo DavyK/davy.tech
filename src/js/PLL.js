@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import cubes from './cubes';
-import { thisTypeAnnotation } from '@babel/types';
 
 
 class Pll extends Component {
