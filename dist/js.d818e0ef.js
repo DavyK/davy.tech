@@ -26088,8 +26088,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("li", {
-        className: "timeline-item",
-        onClick: this.props.handleClick
+        className: "timeline-item"
       }, _react.default.createElement("div", {
         className: "timeline-item-date"
       }, _react.default.createElement("span", {
@@ -26099,7 +26098,9 @@ function (_Component) {
       }, this.props.toDate)), _react.default.createElement("div", {
         className: "timeline-item-flex-container"
       }, _react.default.createElement("div", {
-        className: "timeline-item-short"
+        className: "timeline-item-short",
+        onMouseEnter: this.props.toggleHover,
+        onMouseLeave: this.props.toggleHover
       }, _react.default.createElement("div", {
         className: "timeline-item-short-title ".concat(this.props.showLongText ? 'selected-item' : '')
       }, this.props.title), _react.default.createElement("div", {
@@ -26137,10 +26138,11 @@ function (_Component2) {
   }
 
   _createClass(Timeline, [{
-    key: "handleClick",
-    value: function handleClick(itemIndex) {
+    key: "toggleHover",
+    value: function toggleHover(itemIndex) {
       var _this2 = this;
 
+      console.log('toggling');
       this.setState(function () {
         if (itemIndex !== _this2.state.displayItem) {
           return {
@@ -26165,8 +26167,8 @@ function (_Component2) {
       }, _timelineData.default.items.map(function (data) {
         return _react.default.createElement(TimelineItem, _extends({
           key: "item-".concat(data.id),
-          handleClick: function handleClick() {
-            return _this3.handleClick(data.id);
+          toggleHover: function toggleHover() {
+            return _this3.toggleHover(data.id);
           },
           showLongText: _this3.state.displayItem === data.id
         }, data));
@@ -27363,7 +27365,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54715" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62578" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -9,14 +9,13 @@ class TimelineItem extends Component {
     return (
       <li
         className="timeline-item"
-        onClick={this.props.handleClick}
       >
         <div className="timeline-item-date">
           <span className="timeline-item-date-from">{this.props.fromDate}</span>
           <span className="timeline-item-date-to">{this.props.toDate}</span>
         </div>
         <div className="timeline-item-flex-container">
-          <div className="timeline-item-short">
+          <div className="timeline-item-short" onMouseEnter={this.props.toggleHover} onMouseLeave={this.props.toggleHover}>
             <div className={`timeline-item-short-title ${this.props.showLongText ? 'selected-item' : ''}`}>{this.props.title}</div>
             <div className="timeline-item-short-place">{this.props.place}</div>
           </div>
@@ -38,7 +37,8 @@ class Timeline extends Component {
     };
   }
 
-  handleClick(itemIndex) {
+  toggleHover(itemIndex) {
+    console.log('toggling')
     this.setState(
       () => {
         if (itemIndex !== this.state.displayItem) {
@@ -58,7 +58,7 @@ class Timeline extends Component {
           {itemData.items.map(data => (
             <TimelineItem
               key={`item-${data.id}`}
-              handleClick={() => this.handleClick(data.id)}
+              toggleHover={() => this.toggleHover(data.id)}
               showLongText={ this.state.displayItem === data.id}
               {...data}
             />
