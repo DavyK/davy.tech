@@ -26,6 +26,11 @@ button:disabled {
         background-color: $green-dark;
         border-color: $green-dark;
     }
+
+    &:disabled {
+        background-color: $grey-dark;
+        border-color: $grey-dark;
+    }
 }
 
 
@@ -37,6 +42,10 @@ button:disabled {
     &:hover {
         background-color: $yellow-dark;
         border-color: $yellow-dark;
+    }
+    &:disabled {
+        background-color: $grey-dark;
+        border-color: $grey-dark;
     }
 }
 
@@ -50,6 +59,10 @@ button:disabled {
         background-color: $red-dark;
         border-color: $red-dark;
     }
+    &:disabled {
+        background-color: $grey-dark;
+        border-color: $grey-dark;
+    }
 }
 
 .neutral {
@@ -59,6 +72,10 @@ button:disabled {
     &:hover {
         background-color: $blue-dark;
         border-color: $blue-dark;
+    }
+    &:disabled {
+        background-color: $grey-dark;
+        border-color: $grey-dark;
     }
 }
 
