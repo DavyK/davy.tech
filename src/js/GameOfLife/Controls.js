@@ -20,6 +20,13 @@ class Controls extends Component {
     } = this.props;
     return (
       <div className="game-controls">
+          <div className="control-buttons">
+            <button className="cancel" onClick={resetHandler}><i class="fas fa-eraser"></i></button>
+            <button className="neutral" onClick={initializeHandler}><i class="fas fa-sync-alt"></i></button>
+            <button className="action" disabled={started} onClick={startHandler}><i class="fas fa-play"></i></button>
+            <button className="warning" disabled={!started} onClick={stopHandler}><i class="fas fa-pause"></i></button>
+            <button className="neutral" onClick={tickOnce}><i class="fas fa-step-forward"></i></button>
+          </div>
           <label>Initial Count (<span>{initialCount}</span>)</label>
           <input
               type="range"
@@ -47,11 +54,7 @@ class Controls extends Component {
               max="500"
               step="5"
           />
-          <button className="neutral" onClick={initializeHandler}>Initialise</button>
-          <button className="cancel" onClick={resetHandler}>Reset</button>
-          <button className="action" disabled={started} onClick={startHandler}>Start</button>
-          <button className="warning" disabled={!started} onClick={stopHandler}>Stop</button>
-          <button className="neutral" onClick={tickOnce}>Step Once</button>
+          <p className="text-help">Click on the circles to toggle individual cells!</p>
       </div>
     );
   }

@@ -218,27 +218,29 @@ class GoL extends Component {
       <div>
           <h3>Conway's Game of Life</h3>
           <div className="text-data">Generation: {this.state.generation}</div>
-          <Grid
-              alive={this.state.alive}
-              changeHandler={this.toggleAlive}
-              interval={this.state.interval}
-              size={this.state.size}
-          />
-          <Controls
-              initialCount={this.state.initialCount}
-              changeInitialCountHandler={this.changeInitialCountHandler}
-              initializeHandler={this.initializeBoard}
-              startHandler={this.startGame}
-              stopHandler={this.stopGame}
-              size={this.state.size}
-              changeSizeHandler={this.changeSizeHandler}
-              resetHandler={this.reset}
-              interval={this.state.interval}
-              changeIntervalHandler={this.changeIntervalHandler}
-              tickOnce={this.tick}
-              started={this.state.started}
-          />
+          <div className="gol-container">
+            <Controls
+                initialCount={this.state.initialCount}
+                changeInitialCountHandler={this.changeInitialCountHandler}
+                initializeHandler={this.initializeBoard}
+                startHandler={this.startGame}
+                stopHandler={this.stopGame}
+                size={this.state.size}
+                changeSizeHandler={this.changeSizeHandler}
+                resetHandler={this.reset}
+                interval={this.state.interval}
+                changeIntervalHandler={this.changeIntervalHandler}
+                tickOnce={this.tick}
+                started={this.state.started}
+            />
+            <Grid
+                alive={this.state.alive}
+                changeHandler={this.toggleAlive}
+                interval={this.state.interval}
+                size={this.state.size}
+            />
 
+          </div>
       </div>
     );
   }

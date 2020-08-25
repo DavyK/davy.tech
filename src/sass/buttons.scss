@@ -21,46 +21,45 @@ button:disabled {
     background-color: $green;
     border-color: $green;
     color: $white;
+
+    &:hover {
+        background-color: $green-dark;
+        border-color: $green-dark;
+    }
 }
 
-.action:hover {
-    background-color: $green-dark;
-    border-color: $green-dark;
-    color: $white;
-}
+
 
 .warning {
     background-color: $yellow;
     border-color: $yellow;
     color: $white;
+    &:hover {
+        background-color: $yellow-dark;
+        border-color: $yellow-dark;
+    }
 }
 
-.warning:hover {
-    background-color: $yellow-dark;
-    border-color: $yellow-dark;
-    color: $white;
-}
+
 
 .cancel {
     background-color: $red;
     border-color: $red;
     color: $white;
-}
-
-.cancel:hover {
-    background-color: $red-dark;
-    border-color: $red-dark;
-    color: $white;
+    &:hover {
+        background-color: $red-dark;
+        border-color: $red-dark;
+    }
 }
 
 .neutral {
     background-color: $blue;
     border-color: $blue;
     color: $white;
+    &:hover {
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+    }
 }
 
-.neutral:hover {
-    background-color: $blue-dark;
-    border-color: $blue-dark;
-    color: $white;
-}
+
