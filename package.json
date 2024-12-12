@@ -19,7 +19,7 @@
     "prod": "npm run parcel-prod && npm run relocate-index"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.3",
     "parcel-bundler": "^1.2.3"
   }
