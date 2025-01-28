@@ -1,11 +1,18 @@
 export default {
   items: [{
+    id: 'pavlov',
+    fromDate: 'Feb, 2024',
+    toDate: 'Present',
+    place: "Pavlov, London, UK (Remote)",
+    title: 'Software Engineer',
+    description: "Working as only 1 of 3 engineers, I touched every part of the stack. Over the last 10 months, I rewrote large parts of the frontend to be more reusable; designed, implemented and migrated some of our existing workflows to a more generalized state machine approach. I built integrations for slack and for segment.io. Technologies used: Python, Django, GraphQL, Graphene, Typescript, React, Apollo, Postgres, Redis, AWS.",
+  },{
     id: 'intercom',
     fromDate: 'Nov, 2019',
     toDate: 'Present',
     place: "Intercom, London, UK",
-    title: 'Product Engineer',
-    description: "Designing and building product features across the backend and frontend. Responsibilities included designing and implementing technical solutions to deliver impactful features, communicating with customers to identify problems to be solved, and managing the roll out of large features for thousands for customers. Technologies used: Ruby (rails), Javascript (Vanilla, Ember JS, React), databases (Mysql, Mongo, Aws Redshift, Elasticsearch, Redis). Other tools: Git, Github, Python (for data analysis), Docker, docker-compose, data-dog, honeycomb.",
+    title: 'SeniorProduct Engineer',
+    description: "Leading the team in delivery of complex multi-quarter projects. Cross-functional collaboration with product and design. Communicating project timelines to leadership. Managing rollout to thousands of customers. Designing and building product features across the backend and frontend. Iterative performance improvement of many existing features. Technologies used: Ruby (rails), Javascript (Vanilla, Ember JS, React), databases (Mysql, Mongo, Aws Redshift, Elasticsearch, Redis). Other tools: Git, Github, Python (for data analysis), Docker, docker-compose, data-dog, honeycomb.",
   },{
     id: 'nanopore',
     fromDate: 'Apr, 2016',
