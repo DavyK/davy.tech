@@ -1,3 +1,4 @@
+@use 'colors' as *;
 
 .timeline {
     list-style: none;
@@ -46,6 +47,12 @@ $animation-fadein-duration: 0.6s;
         max-height: unset;
         margin-top: 0.5rem;
     }
+}
+
+.timeline-item-long-technologies {
+    color: $grey;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .timeline-item-short-place {

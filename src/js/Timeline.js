@@ -9,19 +9,24 @@ class TimelineItem extends Component {
     return (
       <li
         className="timeline-item"
+        onMouseEnter={this.props.toggleHover}
+        onMouseLeave={this.props.toggleHover}
       >
         <div className="timeline-item-date">
           <span className="timeline-item-date-from">{this.props.fromDate}</span>
           <span className="timeline-item-date-to">{this.props.toDate}</span>
         </div>
         <div className="timeline-item-flex-container">
-          <div className="timeline-item-short" onMouseEnter={this.props.toggleHover} onMouseLeave={this.props.toggleHover}>
+          <div className="timeline-item-short">
             <div className={`timeline-item-short-title ${this.props.showLongText ? 'selected-item' : ''}`}>{this.props.title}</div>
             <div className="timeline-item-short-place">{this.props.place}</div>
           </div>
           <div className={`timeline-item-long ${this.props.showLongText ? '' : 'hidden'}`}>
             <div className="timeline-item-long-title">{this.props.tile}</div>
             <div className="timeline-item-long-description">{this.props.description}</div>
+            {this.props.technologies && <div className="timeline-item-long-technologies">
+              <div>{this.props.technologies}</div>
+            </div>}
           </div>
         </div>
       </li>

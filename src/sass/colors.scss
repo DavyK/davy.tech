@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $bg-color: #2F2F2F;
 $base-font-color: #fff;
 
@@ -14,21 +16,21 @@ $grey-dark: #888;
 
 
 $blue: #5C8FEF;
-$blue-less: lighten($blue, 10%);
-$blue-dark: darken($blue, 10%);
+$blue-less: color.scale($blue, $lightness: 10%);
+$blue-dark: color.scale($blue, $lightness: -10%);
 
 $green: #0dc81a;
-$green-light: lighten($green, 10%);
-$green-dark: darken($green, 10%);
+$green-light: color.scale($green, $lightness: 10%);
+$green-dark: color.scale($green, $lightness: -10%);
 
 
 $yellow: #f4a234;
-$yellow-light: lighten($yellow, 10%);
-$yellow-dark: darken($yellow, 10%);
+$yellow-light: color.scale($yellow, $lightness: 10%);
+$yellow-dark: color.scale($yellow, $lightness: -10%);
 
 $red: #f03737;
-$red-light: lighten($red, 10%);
-$red-dark: darken($red, 10%);
+$red-light: color.scale($red, $lightness: 10%);
+$red-dark: color.scale($red, $lightness: -10%);
 
 
 $alive: rgb(57, 207, 57);
