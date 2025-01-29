@@ -13,7 +13,7 @@
   "scripts": {
     "relocate-index": "mv ./dist/entry.html ./index.html",
     "parcel-dev": "parcel entry.html",
-    "parcel-prod": "parcel build entry.html",
+    "parcel-prod": "parcel build entry.html --public-url ./dist/",
     "dev": "npm run parcel-dev",
     "start": "npm run parcel-dev",
     "prod": "npm run parcel-prod && npm run relocate-index"
